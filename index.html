@@ -14,9 +14,13 @@
     <!-- tailwind and daisy ui  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawseome cnd  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        .bree-font{
+        .bree-font {
             font-family: 'Bree Serif', serif;
         }
     </style>
@@ -24,13 +28,14 @@
 
 <body>
     <header class="w-10/12 mx-auto">
+
         <!-- navigation -->
         <nav class="flex justify-between py-5">
             <div class="flex items-center">
                 <img src="images/S1.svg" alt="">
                 <p class="font-bold text-xl ml-2 text-[#0F2137]">StartupLanding</p>
             </div>
-            <ul class="flex ">
+            <ul class="md:flex hidden">
                 <li class="py-2 px-5 font-semibold hover:text-[#F94962] duration-200 cursor-pointer">Pricing</li>
                 <li class="py-2 px-5 font-semibold hover:text-[#F94962] duration-200 cursor-pointer">Support</li>
                 <li class="py-2 px-5 font-semibold hover:text-[#F94962] duration-200 cursor-pointer">Register</li>
@@ -38,12 +43,18 @@
                     class="py-2 px-5 font-semibold text-[#F94962] duration-100 cursor-pointer border-b-2 border-[#fff] hover:border-b-2 hover:border-[#F94962]">
                     Get Started</li>
             </ul>
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars text-4xl "></i>
+            </div>
         </nav>
-<!-- hero section  -->
-        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10 py-10">
+
+
+        <!-- hero section  -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 py-10">
             <div>
                 <h2 class="text-6xl leading-snug bree-font">A Creative way to grow your Exciting Business model</h2>
-                <p class="leading-loose my-4 font-semibold">Get your blood tests delivered at let home collect sample from the victory of the managments that
+                <p class="leading-loose my-4 font-semibold text-sm">Get your blood tests delivered at let home collect
+                    sample from the victory of the managments that
                     supplies best
                     design system guidelines ever.</p>
                 <div>
@@ -51,7 +62,7 @@
                         class="py-2 px-2 pr-20 border-2 rounded border-inherit" id="">
                     <button class="btn bg-[#F94962] text-white hover:text-gray-900">Subscribe</button>
                 </div>
-                <div class="flex mt-4">
+                <div class="flex flex-col md:flex-row mt-4">
                     <img class="mr-4 my-4 w-20 cursor-pointer h-auto" src="images/sopnser/sponser-1.png" alt="">
                     <img class="mr-4 my-4 w-20 cursor-pointer h-auto" src="images/sopnser/paypal.png" alt="">
                     <img class="mr-4 my-4 w-20 cursor-pointer h-auto" src="images/sopnser/google.png" alt="">
@@ -63,24 +74,94 @@
             </div>
         </div>
     </header>
+
+
+    <!-- main section  -->
     <main>
+            <!-- features  -->
         <section class="w-10/12 mx-auto my-10">
             <div class="w-10/12 md:w-6/12 mx-auto text-center">
                 <h2 class="text-3xl font-semibold">Go Beyond unlimited features</h2>
-                <p class="font-medium mt-4">Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click into your preferred format.</p>
+                <p class="font-medium mt-4 text-sm">Focus only on the meaning, we take care of the design. As soon as
+                    the meeting end you can export in one click into your preferred format.</p>
             </div>
 
-            <div>
-                <div>
-                    <img src="images/icons/icons.svg" alt="">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-20">
+                <div class="flex items-start shadow-xl p-4 rounded-xl">
+                    <img class="mr-4" src="images/icons/icons.svg" alt="">
                     <div>
-                        <h2>Trusted marketplace</h2>
-                        <p>Our homes are designed to be move-in ready. Think furnished common areas, super fast wifi, and flexible leases.</p>
+                        <h2 class="text-xl font-semibold">Trusted marketplace</h2>
+                        <p class="leading-relaxed text-sm mt-2">Our homes are designed to be move-in ready. Think
+                            furnished common areas, super fast wifi, and flexible leases.</p>
+                    </div>
+                </div>
+                <div class="flex items-start shadow-xl p-4 rounded-xl">
+                    <img class="mr-4" src="images/icons/icons1.svg" alt="">
+                    <div>
+                        <h2 class="text-xl font-semibold">Trusted marketplace</h2>
+                        <p class="leading-relaxed text-sm mt-2">Our homes are designed to be move-in ready. Think
+                            furnished common areas, super fast wifi, and flexible leases.</p>
+                    </div>
+                </div>
+                <div class="flex items-start shadow-xl p-4 rounded-xl">
+                    <img class="mr-4" src="images/icons/Group.svg" alt="">
+                    <div>
+                        <h2 class="text-xl font-semibold">Trusted marketplace</h2>
+                        <p class="leading-relaxed text-sm mt-2">Our homes are designed to be move-in ready. Think
+                            furnished common areas, super fast wifi, and flexible leases.</p>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-</body>
 
+        <!-- explore agency  -->
+        <section class=" bg-[#F9FAFC]">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 py-10 w-10/12 mx-auto my-10">
+                <div>
+                    <img class="w-10/12 mx-auto" src="images/Illustration.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-3xl leading-snug bree-font">We help you to boost your <br> business profitable with <br> our talent marketer</h2>
+                    <p class="leading-loose my-4 font-semibold text-sm">Get your tests delivered at let home collect
+                        sample from the victory of the managments that supplies best design system guidelines ever.</p>
+                    <ul>
+                        <li class="leading-loose font-semibold text-sm"><i class="fa-solid fa-circle-check text-[#3FDBB1] mr-4"></i> Unlimited design possibility</li>
+                        <li class="leading-loose font-semibold text-sm"><i class="fa-solid fa-circle-check text-[#3FDBB1] mr-4"></i> Completely responsive features </li>
+                    </ul>
+                    <a href="#" class="text-[#3183FF] underline block mt-4 font-semibold">Explore Details </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- explore agency  -->
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 py-10 w-10/12 mx-auto my-10">
+                <div>
+                    <h2 class="text-3xl leading-snug bree-font">We help you to boost your <br> business profitable with <br> our talent marketer</h2>
+                    <p class="leading-loose my-4 font-semibold text-sm">Get your tests delivered at let home collect
+                        sample from the victory of the managments that supplies best design system guidelines ever.</p>
+                    <ul>
+                        <li class="leading-loose font-semibold text-sm"><i class="fa-solid fa-circle-check text-[#3FDBB1] mr-4"></i> Unlimited design possibility</li>
+                        <li class="leading-loose font-semibold text-sm"><i class="fa-solid fa-circle-check text-[#3FDBB1] mr-4"></i> Completely responsive features </li>
+                    </ul>
+                    <a href="#" class="text-[#3183FF] underline block mt-4 font-semibold">Explore Details </a>
+                </div>
+                <div>
+                    <img class="w-10/12 mx-auto" src="images/Illustration1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="w-10/12 mx-auto"> 
+            <div class="w-10/12 md:w-6/12 mx-auto text-center my-8">
+                <h2 class="text-3xl font-semibold">More than thousand of user we have worldwide with happy feedback</h2>
+                <p class="font-medium mt-4 text-sm">Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click into your preferred format.</p>
+            </div>
+            <img src="" alt="">
+        </section>
+
+    </main>
+
+
+</body>
 </html>
